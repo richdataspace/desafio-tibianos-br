@@ -1,0 +1,11 @@
+{
+  "name": "desafio_tibia",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.4"
+  }
+}

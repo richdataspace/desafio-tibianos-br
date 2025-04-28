@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    /* box-sizing: border-box; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: auto; /* garante que haja rolagem se necessário */
+}
+
+html, body {
+    height: 100%;
+    background: #0f172a;
+}
+
+  
+
+.header {
+    width: 100%;
+    height: 320px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+
+}
+
+.header p {
+    font-family: 'Uncial Antiqua', cursive;
+    font-weight: normal;
+    font-size: 100px;
+    color: #e0f2fe; /* Azul bem clarinho, quase branco */
+    text-shadow: 1px 1px 3px #0c4a6e, 0 0 8px #38bdf8; /* Sombra azul intensa com brilho ciano */
+    background: linear-gradient(135deg, #0f172a, #1e3a8a, #3b82f6); /* Azul escuro → royal blue → azul celeste */
+    padding: 20px 40px;
+    border: 3px solid #60a5fa; /* Azul médio */
+    border-radius: 15px;
+    box-shadow: 0 0 25px #1e40af; /* Sombra azul profunda com glow */
+    align-items: center;
+    height: 130px;
+
+}
+
+
+.image-dragon {
+    width: 125px;
+    height: 100px;
+}
+
+/* Container geral do formulário */
+.box-sign-up {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-family: Arial, sans-serif;
+}
+
+/* Cada bloco com label + input */
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo dos labels */
+.input-field label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Inputs de texto, email, senha */
+.input-field input[type="text"],
+.input-field input[type="email"],
+.input-field input[type="password"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-field input:focus {
+    border-color: #3399ff;
+}
+
+/* Estilo do campo select */
+.input-field select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-field select:focus {
+    border-color: #3399ff;
+}
+
+/* Gênero: opções em mini box */
+.gender-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.gender-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    transition: background-color 0.2s, border-color 0.2s;
+    user-select: none;
+}
+
+.gender-box:hover {
+    background-color: #e6f0ff;
+    border-color: #3399ff;
+}
+
+.gender-box input[type="radio"] {
+    accent-color: #3399ff;
+    cursor: pointer;
+}
+
+/* Botão de envio */
+.submit-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}

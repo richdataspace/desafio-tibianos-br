@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tibia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <p>
+            <img src="dragon.png" class="image-dragon">
+            Tibianos
+            <img src="dragon.png" class="image-dragon">
+        </p>
+    </div>
+
+    <div>
+        <div class="box-sign-up">
+            <div class="input-field">
+                <label for="user_name">Name</label>
+                <input type="text" id="user_name" name="name" placeholder="user name">
+            </div>
+            <div class="input-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email">
+            </div>
+            <div class="input-field">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="password">
+            </div>
+
+            <div class="input-field">
+                <label for="vocation">Vocation</label>
+                <select id="vocation" name="vocation">
+                    <option value="" disabled selected>Select a vocation</option>
+                    <option value="Knight">Knight</option>
+                    <option value="Sorcerer">Sorcerer</option>
+                    <option value="Druid">Druid</option>
+                    <option value="Monk">Monk</option>
+                </select>
+            </div>
+
+            <div class="input-field">
+                <label>Gender</label>
+                <div class="gender-options">
+                    <label class="gender-box">
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label>
+                    <label class="gender-box">
+                        <input type="radio" name="gender" value="male">
+                        Male
+                    </label>
+                </div>
+            </div>
+            <div class="input-field">
+                <label for="world">World</label>
+                <select id="world" name="world">
+                    <option value="" disabled selected>Select a world</option>
+                    <option value="Elera">Elera</option>
+                    <option value="Pandora">Pandora</option>
+                    <option value="Colombo">Colombo</option>
+                    <option value="Tamandare">Tamandare</option>
+                    <option value="Rio Grande">Rio Grande</option>
+                    <option value="Babilonia">Babilonia</option>
+                </select>
+            </div>
+
+            <!-- Botão de envio -->
+            <div class="submit-wrapper">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
